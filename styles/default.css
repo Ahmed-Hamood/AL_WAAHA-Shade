@@ -11,6 +11,8 @@ body {
   background-size: 40%;
   font-family: "Almarai", sans-serif;
   height: 2000vh;
+
+  /* zoom: 0.85; */
 }
 
 a {
@@ -34,10 +36,17 @@ a {
   background: rgb(154, 119, 11);
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 700px) {
   html,
   body {
     background-size: 150%;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  html,
+  body {
     font-size: 14px;
   }
 }
@@ -47,17 +56,22 @@ a {
 }
 
 .items-center-v-h {
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .items-center-h {
-  display: flex;
   justify-content: center;
 }
 
+.items-center-sb {
+  justify-content: space-between;
+}
+
+.items-center-se {
+  justify-content: space-evenly;
+}
+
 .items-row-reverse {
-  display: flex;
   flex-direction: row-reverse;
 }
