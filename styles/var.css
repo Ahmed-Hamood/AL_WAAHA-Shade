@@ -3,7 +3,8 @@ html {
   --main-border-color: #CCAC56;
 
   --nav-menu-selected-border-color: rgba(204, 161, 45, 0.66);
-
+  --slideshow-dot-active-bg-color: #DDB74F;
+  --slideshow-dot-non-active-bg-color: rgba(0, 0, 0, 0.264);
 
  
  }
