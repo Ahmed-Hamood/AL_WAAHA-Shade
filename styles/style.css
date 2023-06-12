@@ -58,7 +58,7 @@
 
 .navbar-container {
   margin-top: 14px;
-  background: #fcfcfcaf;
+  background: #fcfcfc;
   border: 1px solid #ccac56;
   border-right: none;
   border-left: none;
@@ -121,16 +121,16 @@
 /* #region - slideshow */
 
 .slideshow-container {
-  background: #00000013;
+  /* background: #00000013; */
   width: 100%;
   margin: auto;
-  margin-top: 250px;
+  margin-top: 14rem;
   padding: 22px 0;
 }
 
 @media screen and (max-width: 460px) {
   .slideshow-container {
-    margin-top: 160px;
+    margin-top: 11rem;
   }
 }
 
@@ -147,9 +147,14 @@
 
 .slide-item img {
   vertical-align: center;
-  width: 100%;
-  height: 400px;
+  /* width: 100%;
+  height: 400px; */
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 100%;
+  /* aspect-ratio: 4/3; */
+  aspect-ratio: 16/9;
+  object-fit: fill;
 }
 
 @media screen and (max-width: 750px) {
@@ -172,16 +177,16 @@
   transform: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-
+  background: rgba(0, 0, 0, 0.204);
   transition: 0.4s background-color;
 }
 
 .next {
-  right: 8px;
+  right: -50px;
   border-radius: 3px;
 }
 .prev {
-  left: 8px;
+  left: -50px;
   border-radius: 3px;
 }
 
@@ -215,9 +220,9 @@
 }
 
 .fade {
-  -webkit-animation-name: fade;
+  -webkit-animation-name: fadeWithScale;
   -webkit-animation-duration: 0.4s;
-  animation-name: fade;
+  animation-name: fadeWithScale;
   animation-duration: 0.4s;
 }
 
@@ -238,12 +243,19 @@
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
   .prev,
-  .next,
-  .text {
-    font-size: 14px;
+  .next{
+    font-size: 1.2rem;
   }
+
+  .next {
+    right: 8px;
+  }
+  .prev {
+    left: 8px;
+  }
+  
 }
 
 /* #endregion */
@@ -252,15 +264,13 @@
 
 .title-section {
   width: 100%;
-  margin-top: 33px;
-  margin-bottom: 22px;
+  margin-top: 40px;
+  margin-bottom: 33px;
 }
 
 .title-section .title-content {
   width: 100%;
   max-width: 200px;
- 
-
   border: 12px solid transparent;
   border-image: url("../img/title-border.png") 80;
   border-radius: 5px;
@@ -282,10 +292,32 @@
 
 /* #region - aboutUs section */
 
-.aboutus-container {
+.aboutUs-container {
   width: 100%;
-  height: 500px;
-  background: #0000002a;
+  padding: 0 22px;
+}
+
+.aboutUs-container .aboutUs-content {
+  background: var(--aboutUs-bg-color);
+  border: var(--aboutUs-border);
+  width: 100%;
+  width: 1200px;
+  padding: 50px 5%;
+}
+
+.aboutUs-container .aboutUs-content p {
+  font-size: 1.4rem;
+  color: var(--aboutUs-text-color);
+  line-height: 180%;
+  text-align: center;
+
+  display: block;
+  opacity: 0;
+  animation: reveal 0.5s forwards var(--d);
+}
+
+.aboutUs-container .aboutUs-content p:last-child {
+  margin-top: 20px;
 }
 
 /* #endregion */

@@ -1,4 +1,4 @@
-@keyframes nav-border_animation {
+@-webkit-keyframes nav-border_animation {
   from {
     width: 20%;
   }
@@ -7,22 +7,60 @@
   }
 }
 
-@-webkit-keyframes fade {
+
+ @keyframes nav-border_animation {
   from {
-    opacity: 0.4;
+    width: 20%;
   }
   to {
-    opacity: 1;
+    width: 100%;
   }
 }
 
-@keyframes fade {
+/* ------------------------------ */
+
+@-webkit-keyframes fadeWithScale {
   from {
     transform: scale(0.9);
-    opacity: 0.4;
+    opacity: 0;
   }
   to {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@keyframes fadeWithScale {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ------------------------------ */
+
+@-webkit-keyframes reveal {
+  from {
+    transform: translateY(20px);
+     
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes reveal {
+  from {
+    transform: translateY(20px);
+     
+  }
+  to {
+    opacity: 1;
+    transform: none;
   }
 }

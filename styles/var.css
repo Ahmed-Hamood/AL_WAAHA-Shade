@@ -7,4 +7,7 @@ html {
   --slideshow-dot-non-active-bg-color: rgba(0, 0, 0, 0.264);
 
  
+  --aboutUs-bg-color: #669999;
+  --aboutUs-text-color: #ffff;
+  --aboutUs-border: 8px solid #CCAC56;
  }
