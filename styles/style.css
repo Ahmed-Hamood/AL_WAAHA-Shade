@@ -258,8 +258,8 @@
 
 .title-section .title-content {
   width: 100%;
-  max-width: 250px;
-  text-align: center;
+  max-width: 200px;
+ 
 
   border: 12px solid transparent;
   border-image: url("../img/title-border.png") 80;
@@ -269,12 +269,13 @@
 .title-wrapper {
   width: 100%;
   background: rgba(255, 255, 255, 0.6);
-  padding: 8px 0;
+  padding: 6px 0;
 }
 
 .title-section .title-content .title-text {
   color: var(--main-color);
   font-size: 1.4rem;
+  font-weight: 600;
 }
 
 /* #endregion */
