@@ -64,3 +64,16 @@
     transform: none;
   }
 }
+
+/* ------------------------------ */
+
+@keyframes product_list_link_animation {
+  from {
+    transform: translateX(-50px);
+     
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

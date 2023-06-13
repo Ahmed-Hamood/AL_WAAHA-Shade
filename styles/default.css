@@ -51,6 +51,10 @@ a {
   }
 }
 
+.no-display{
+  /* display: none !important; */
+}
+
 .flex {
   display: flex;
 }
@@ -62,6 +66,14 @@ a {
 
 .items-center-h {
   justify-content: center;
+}
+
+.items-fs {
+  
+}
+
+.item-align-fs {
+  align-content: flex-start;
 }
 
 .items-center-sb {
@@ -81,4 +93,8 @@ a {
 
 .items-row-reverse {
   flex-direction: row-reverse;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
