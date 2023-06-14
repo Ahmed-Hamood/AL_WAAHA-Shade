@@ -15,6 +15,8 @@ function Run() {
   let main_product_title_mb = document.querySelector(".product-mb-title");
   let main_product_text = document.querySelector(".product-main-title-mb");
 
+  let mb_menu_btn = document.querySelector(".mb-menu-btn");
+
   slideshow();
 
   // active menu item when clicked
@@ -91,6 +93,7 @@ function Run() {
     for (let i = 0; i < product_list_links.length; i++) product_list_links[i].classList.remove("active");
   });
 
+  // minimize header when scroll
   // -----------------------------
 
   window.addEventListener("scroll", function () {
@@ -99,8 +102,16 @@ function Run() {
     } else {
       this.document.body.classList.remove("header-min");
     }
-
   });
+
+  // active mobile menu btn
+  // -----------------------------
+
+  mb_menu_btn.addEventListener("click", () => {
+    document.body.classList.add("blank-content-open")
+    document.querySelector(".blank-content").classList.add("show")
+    mb_menu_btn.classList.add("hide")
+  })
 
 
 }

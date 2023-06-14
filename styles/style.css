@@ -87,6 +87,10 @@
   border-bottom: 6px solid #527676;
 }
 
+.mb-menu-btn.hide {
+  display: none;
+}
+
 @media screen and (max-width: 460px) {
   .mb-menu-btn {
     display: block;
@@ -169,10 +173,28 @@
 
 /* #region - sidebar nav-menu */
 
+.blank-content {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  background: #050404e2;
+  z-index: 100;
+  pointer-events: auto;
+  animation: fadeAnimation 0.2s;
+}
 
+.blank-content.show {
+  display: block;
+  overflow: hidden;
+}
+
+.blank-content-open .sidebar-container {
+  display: block;
+}
 
 /* #endregion */
-
 
 /* #region - slideshow */
 

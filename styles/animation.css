@@ -77,3 +77,13 @@
     transform: none;
   }
 }
+
+@keyframes fadeAnimation {
+  from {
+    opacity: 0;
+     
+  }
+  to {
+    opacity: 1;
+  }
+}

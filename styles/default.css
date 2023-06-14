@@ -10,30 +10,38 @@ body {
   background-image: url("../img/bg.png");
   background-size: 40%;
   font-family: "Almarai", sans-serif;
-  height: 2000vh;
-  scroll-behavior: smooth;  
-  /* overflow: scroll; */
-  /* zoom: 0.85; */
-
-  /* overflow-y: scroll; */
-  /* max-height: 100vh; */
+  scroll-behavior: smooth;
+  vertical-align: baseline;
+  overflow-wrap: break-word;
+  text-rendering: optimizelegibility;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: normal;
+  /* position: relative; */
+  width: 100vw;
+  height: 100vh;
 }
+
+.blank-content-open{
+  overflow: hidden;
+}
+
 
 a {
   text-decoration: none;
 }
 
 .body-container {
-  position: relative;
-
+  /* position: relative; */
 }
 
 /* Scroll bar style */
 ::-webkit-scrollbar {
   width: 3px;
+  height: 3px;
 }
 
-@media screen and (max-width: 550px) { 
+@media screen and (max-width: 550px) {
   ::-webkit-scrollbar {
     width: 0px;
   }
