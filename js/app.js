@@ -94,7 +94,7 @@ function Run() {
   // -----------------------------
 
   window.addEventListener("scroll", function () {
-    if (window.scrollY > 380) {
+    if (window.scrollY > 350) {
       this.document.body.classList.add("header-min");
     } else {
       this.document.body.classList.remove("header-min");

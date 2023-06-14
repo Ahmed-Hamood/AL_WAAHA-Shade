@@ -47,8 +47,8 @@
   }
 
   .header-min .logo-img {
-   width: 0px;
-   opacity: 0;
+    width: 0px;
+    opacity: 0;
   }
 
   .header-min .mb-logo-banner {
@@ -83,7 +83,8 @@
   background: var(--mobile-menu-btn-bg);
   z-index: 3;
   border-radius: 14px;
-  border: 2px solid #d4a012;
+  border: var(--mobile-menu-btn-border);
+  border-bottom: 6px solid #527676;
 }
 
 @media screen and (max-width: 460px) {
@@ -98,7 +99,7 @@
 }
 
 .menu-svg {
-  width: 35px;
+  width: 36px;
   height: 30px;
 }
 
@@ -138,10 +139,6 @@
   position: relative;
 }
 
-/* .navbar-container .menu-content .navbar-item.active {
-  border-bottom: var(--nav-menu-selected-border-color);
-} */
-
 .navbar-container .menu-content .navbar-item.active::after {
   content: "";
   position: absolute;
@@ -169,6 +166,13 @@
 }
 
 /* #endregion */
+
+/* #region - sidebar nav-menu */
+
+
+
+/* #endregion */
+
 
 /* #region - slideshow */
 
