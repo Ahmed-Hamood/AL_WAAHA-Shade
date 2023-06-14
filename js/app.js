@@ -1,7 +1,7 @@
 import slideshow from "./slideshow.js";
 
 function Run() {
-  let body_element = document.querySelector("body");
+  let body_element = document.querySelector(".body-container");
 
   let navbar_items = document.querySelectorAll(".navbar-item");
   let product_list_links = document.querySelectorAll(".product-list-link");
@@ -20,10 +20,15 @@ function Run() {
   // active menu item when clicked
   for (let i = 0; i < navbar_items.length; i++) {
     navbar_items[i].addEventListener("click", (item) => {
+      let getNav = item.target.getAttribute("link-ref");
+      let addOffset = 120;
+
       for (let i = 0; i < navbar_items.length; i++) navbar_items[i].classList.remove("active");
 
-      if (item.target.tagName == "A") item.target.parentElement.classList.add("active");
-      else item.target.classList.add("active");
+      item.target.classList.add("active");
+
+      if (getNav == "main") addOffset = 0;
+      window.scrollTo(0, document.getElementById(getNav).offsetTop + addOffset);
     });
   }
 
@@ -39,10 +44,12 @@ function Run() {
 
       item.target.classList.add("active");
 
- 
+      // hide all products group view content
+      view_group_content.forEach((el) => el.classList.remove("active"));
 
-      view_group_content.forEach((ele) => {
-        ele.classList.remove("active");
+      // select group name by product link selection
+      view_group_content.forEach((el) => {
+        if (selected_item == el.getAttribute("group_name")) el.classList.add("active");
       });
 
       if (window.innerWidth <= 1060) {
@@ -54,17 +61,10 @@ function Run() {
 
         back_btn.classList.add("mb-active");
 
-     main_product_title_mb.classList.remove("hide");
-      main_product_title_mb.classList.add("show");
-      main_product_text.textContent = item.target.textContent
-
+        main_product_title_mb.classList.remove("hide");
+        main_product_title_mb.classList.add("show");
+        main_product_text.textContent = item.target.textContent;
       }
-
-      view_group_content.forEach((el) => {
-        if (selected_item == el.getAttribute("group_name")) {
-          el.classList.add("active");
-        }
-      });
     });
   }
 
@@ -72,7 +72,7 @@ function Run() {
   // Mobile
   // #################################
 
-  // back btn active
+  // back to products list links btn active
 
   back_btn.addEventListener("click", () => {
     products_list_container.classList.remove("no-display");
@@ -86,27 +86,23 @@ function Run() {
     main_product_title_mb.classList.remove("show");
     main_product_title_mb.classList.add("hide");
 
+    window.scrollTo(0, document.getElementById("product-view").offsetTop);
+
     for (let i = 0; i < product_list_links.length; i++) product_list_links[i].classList.remove("active");
   });
 
-  // ---------------------
-  let HorPos = null;
+  // -----------------------------
 
-  body_element.addEventListener(
-    "scroll",
-    (event) => {
-      HorPos = event.target.scrollTop;
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 380) {
+      this.document.body.classList.add("header-min");
+    } else {
+      this.document.body.classList.remove("header-min");
+    }
 
-      //  if (window.innerWidth < 400) {
-      if (HorPos >= 330) {
-        alert("ffff");
-      } else {
-        alert("ffff");
-      }
-      //  }
-    },
-    { passive: true }
-  );
+  });
+
+
 }
 
 Run();

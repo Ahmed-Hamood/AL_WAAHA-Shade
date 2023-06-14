@@ -22,11 +22,18 @@
 }
 
 .logo-img {
-  width: 100%;
-  max-width: 120px;
+  /* width: 100%; */
+  width: 140px;
+  transition: 300ms all;
+}
 
-  /* height: 80px;
-  width: 80px;   */
+.header-min .logo-img {
+  /* width: 100px; */
+}
+
+.mb-logo-banner {
+  background: #ffffff;
+  display: none;
 }
 
 @media screen and (max-width: 550px) {
@@ -36,7 +43,16 @@
   }
 
   .logo-img {
-    max-width: 120px;
+    width: 140px;
+  }
+
+  .header-min .logo-img {
+   width: 0px;
+   opacity: 0;
+  }
+
+  .header-min .mb-logo-banner {
+    display: flex;
   }
 }
 
@@ -48,9 +64,42 @@
 }
 
 .banner-content p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #fff;
   font-weight: 500;
+}
+
+/* #endregion */
+
+/* #region - mobile btn */
+.mb-menu-btn {
+  /* display: none; */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  margin: 12px;
+  background: var(--mobile-menu-btn-bg);
+  z-index: 3;
+  border-radius: 14px;
+  border: 2px solid #d4a012;
+}
+
+@media screen and (max-width: 460px) {
+  .mb-menu-btn {
+    display: block;
+  }
+}
+
+.mb-menu-btn .content-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.menu-svg {
+  width: 35px;
+  height: 30px;
 }
 
 /* #endregion */
@@ -111,6 +160,8 @@
   color: var(--main-color);
   font-size: 1.2rem;
   padding: 0 8px;
+
+  pointer-events: none;
 }
 
 .navbar-container .menu-content .navbar-item a:hover {
@@ -377,7 +428,7 @@
   background: var(--ourProducts-products-list-bg);
   border: 3px solid #ccac56;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  border-radius: 20px;
+  border-radius: 30px 0px 30px 0;
   height: 100%;
   width: 100%;
   max-width: 320px;
@@ -387,7 +438,6 @@
 
 .products-list-container .content-wrapper {
   width: 100%;
-  /* padding: 26px 5px; */
   height: 490px;
 }
 
@@ -408,6 +458,15 @@
   width: 100%;
   max-width: 280px;
   -webkit-tap-highlight-color: transparent;
+}
+
+@media screen and (max-width: 1085px) {
+  .products-list-container .products-list-content .product-list-link {
+    background: #4b7070;
+    border-radius: 5px;
+    border: 1px solid #3e5d5d;
+    max-width: 250px;
+  }
 }
 
 .products-list-container .products-list-content .product-list-link:last-child {

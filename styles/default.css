@@ -11,17 +11,32 @@ body {
   background-size: 40%;
   font-family: "Almarai", sans-serif;
   height: 2000vh;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth;  
+  /* overflow: scroll; */
   /* zoom: 0.85; */
+
+  /* overflow-y: scroll; */
+  /* max-height: 100vh; */
 }
 
 a {
   text-decoration: none;
 }
 
+.body-container {
+  position: relative;
+
+}
+
 /* Scroll bar style */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 3px;
+}
+
+@media screen and (max-width: 550px) { 
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
 }
 
 ::-webkit-scrollbar-track {
@@ -51,7 +66,7 @@ a {
   }
 }
 
-.no-display{
+.no-display {
   /* display: none !important; */
 }
 
@@ -68,8 +83,6 @@ a {
   justify-content: center;
 }
 
-
-
 .item-align-fs {
   align-content: flex-start;
 }
@@ -82,10 +95,10 @@ a {
   justify-content: space-evenly;
 }
 
-.dir-row{
+.dir-row {
   flex-direction: row;
 }
-.dir-column{
+.dir-column {
   flex-direction: column;
 }
 

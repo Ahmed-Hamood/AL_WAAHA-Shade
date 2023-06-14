@@ -13,370 +13,380 @@
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/default.css" />
     <link rel="stylesheet" href="styles/var.css" />
+    <link rel="stylesheet" href="styles/svg.css" />
     <link rel="stylesheet" href="styles/animation.css" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
-  <body>
-    <!-- blank content -->
-    <!-- image viewer -->
+  <body id="main">
+    <div  class="body-container">
+      <!-- blank content -->
+      <!-- image viewer -->
 
-    <!-- ######################## -->
-    <!-- #### mobile menu with menu #### -->
-    <!-- ######################## -->
+      <!-- mobile menu btn -->
+      <div class="mb-menu-btn">
+        <div class="content-wrapper flex items-center-v-h">
+          <i class="svg menu-svg menu-btn"></i>
+        </div>
+      </div>
+      <!-- ######################## -->
+      <!-- #### mobile menu with menu #### -->
+      <!-- ######################## -->
 
-    <!-- ######################## -->
-    <!-- #### Header #### -->
-    <!-- ######################## -->
-    <!-- logo -->
+      <!-- ######################## -->
+      <!-- #### Header #### -->
+      <!-- ######################## -->
+      <!-- logo -->
 
-    <div class="mb-menu-btn"></div>
+      <header class="header-container">
+        <div class="header-wrapper">
 
-    <header class="header-container">
-      <div class="header-wrapper">
-        <div class="logo-header">
-          <div class="log-content flex items-center-v-h">
-            <img class="logo-img" src="./img/LOGO.png" alt="" />
+          <div class="mb-logo-banner flex items-center-h">
+            <img src="./img/mb_logo_banner.png" alt="">
           </div>
-        </div>
 
-        <!-- banner -->
-        <div class="banner-content">
-          <p>مجانا لمن لايستطيع الدفع ممر لذوي الاحتياجات الخاصة</p>
-        </div>
-        <!-- nav menu list -->
+          <div class="logo-header">
+            <div class="log-content flex items-center-v-h">
+              <img class="logo-img" src="./img/LOGO.png" alt="" />
+            </div>
+          </div>
 
-        <nav class="navbar-container flex items-center-v-h">
-          <ul class="menu-content flex items-row-reverse items-center-se">
-            <li class="navbar-item">
-              <a href="#">الرئيسية</a>
-            </li>
-            <li class="navbar-item active" class="">
-              <a href="#aboutUs">من نحن</a>
-            </li>
-            <li class="navbar-item" class="">
-              <a href="#ourProducts">منتجاتنا</a>
-            </li>
-            <li class="navbar-item" class="">
-              <a href="#">للتواصل معنا</a>
-            </li>
-            <li class="navbar-item" class="">
-              <a href="#">موقعنا</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+          <!-- banner -->
+          <div class="banner-content">
+            <p>مجانا لمن لايستطيع الدفع ممر لذوي الاحتياجات الخاصة</p>
+          </div>
+          <!-- nav menu list -->
 
-    <!-- ######################## -->
-    <!-- #### main landPage #### -->
-    <!-- ######################## -->
-
-    <!-- image slide-show   -->
-
-    <section class="slideshow-container flex items-center-v-h dir-column">
-      <div class="slideshow-items-content">
-        <!-- ------------------------------------------------------------- -->
-        <!-- here slide elements with images embedded by slideshow.js file -->
-        <!-- ------------------------------------------------------------- -->
-        <a class="prev">&#10094;</a>
-        <a class="next">&#10095;</a>
-      </div>
-
-      <div class="dots-content">
-        <!-- ------------------------------------------------------------- -->
-        <!-- here dots elements embedded by slideshow.js file -->
-        <!-- ------------------------------------------------------------- -->
-      </div>
-    </section>
-
-    <!-- ######################## -->
-    <!-- #### about us #### -->
-    <!-- ######################## -->
-
-    <!-- title header  -->
-    <div id="aboutUs" class="title-section flex items-center-h">
-      <div class="title-content flex items-center-h">
-        <div class="title-wrapper flex items-center-v-h">
-          <span class="title-text">من نحن</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- paragraph aboutUs -->
-
-    <section class="aboutUs-container flex items-center-v-h">
-      <div class="aboutUs-content">
-        <p style="--d: 0s">
-          الواحة للمظلات هي أفضل مورد لستائر وقوف السيارات في قطر. نحن نقدم أعلى جودة وأسعار مخفضة لمظلات وقوف السيارات لأن لدينا مصنع إنتاج
-          مجهز تجهيزًا جيدًا ، ومصممين ومهندسين مدربين تدريباً عالياً ، ولدينا إيمان بقدرات عمالنا ذوي الخبرة التي تجعل منتجاتنا فريدة من
-          نوعها وبأسعار منخفضة في مظلات وقوف السيارات في قطر.
-        </p>
-        <p style="--d: 0s">
-          نحن غير مكلفون لأننا نستخدم التكنولوجيا بكفاءة وننظم إنتاجنا بطريقة تقل فيها نفايات المواد ، وتكاليف العمالة المنخفضة ، وتتطلب
-          وقتًا أقل لإكمال الوظيفة التي ستساعدنا مرة أخرى في منح عملائنا مظلات مواقف سيارات جيدة جدًا
-        </p>
-      </div>
-    </section>
-
-    <!-- ######################## -->
-    <!-- #### our product #### -->
-    <!-- ######################## -->
-
-    <!-- title header  -->
-    <div id="ourProducts" class="title-section flex items-center-h">
-      <div class="title-content flex items-center-h">
-        <div class="title-wrapper flex items-center-v-h">
-          <span class="title-text">منتجاتنا</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-mb-title flex items-center-v-h hide">
-      <div class="content-wrapper">
-        <p class="product-main-title-mb"></p>
-      </div>
-    </div>
-
-    <section class="ourProducts-container flex items-center-v-h">
-      <!--  -->
-      <div class="ourProducts-content flex items-center-v-h">
-        <!-- products section -->
-        <div class="products-list-container flex items-center-v-h">
-          <div class="content-wrapper">
-            <ul class="products-list-content flex items-center-v-h dir-column">
-              <li product_name="A" class="product-list-link active">المظلات</li>
-              <li product_name="B" class="product-list-link">البراجولات</li>
-              <li product_name="C" class="product-list-link">السواتر</li>
-              <li product_name="D" class="product-list-link">حديد مشغول</li>
-              <li product_name="E" class="product-list-link">انواع الاقمشة</li>
-              <li product_name="F" class="product-list-link">اخرى</li>
+          <nav class="navbar-container flex items-center-v-h">
+            <ul class="menu-content flex items-row-reverse items-center-se">
+              <li link-ref="main" class="navbar-item active">
+                <a href="#">الرئيسية</a>
+              </li>
+              <li link-ref="aboutUs" class="navbar-item" class="">
+                <a>من نحن</a>
+              </li>
+              <li link-ref="ourProducts" class="navbar-item" class="">
+                <a>منتجاتنا</a>
+              </li>
+              <li link-ref="contactUs" class="navbar-item" class="">
+                <a>للتواصل معنا</a>
+              </li>
+              <li link-ref="ourLocation" class="navbar-item" class="">
+                <a>موقعنا</a>
+              </li>
             </ul>
-          </div>
+          </nav>
+        </div>
+      </header>
+
+      <!-- ######################## -->
+      <!-- #### main landPage #### -->
+      <!-- ######################## -->
+
+      <!-- image slide-show   -->
+
+      <section class="slideshow-container flex items-center-v-h dir-column">
+        <div class="slideshow-items-content">
+          <!-- ------------------------------------------------------------- -->
+          <!-- here slide elements with images embedded by slideshow.js file -->
+          <!-- ------------------------------------------------------------- -->
+          <a class="prev">&#10094;</a>
+          <a class="next">&#10095;</a>
         </div>
 
-        <!-- products view Items -->
+        <div class="dots-content">
+          <!-- ------------------------------------------------------------- -->
+          <!-- here dots elements embedded by slideshow.js file -->
+          <!-- ------------------------------------------------------------- -->
+        </div>
+      </section>
 
-        <div class="products-view-items-container">
-          <div class="content-wrapper flex items-center-v-h">
-            <!-- ############################################################################### -->
-            <div group_name="A" class="view-group-content flex flex-wrap item-align-fs items-fs active">
-              <!-- ---------------------------- -->
-              <article class="product-item-view">
-                <div class="product-item-img-content">
-                  <img src="./img/product_view/img-1.png" alt="" />
-                  <div class="view-more-content flex items-center-v-h">
-                    <p>عرض المزيد</p>
-                  </div>
-                </div>
-                <div class="item-title">لبيبل لي منن منتاظلات</div>
-              </article>
-              <!-- ---------------------------- -->
-              <article class="product-item-view">
-                <div class="product-item-img-content">
-                  <img src="./img/product_view/img-1.png" alt="" />
-                  <div class="view-more-content flex items-center-v-h">
-                    <p>عرض المزيد</p>
-                  </div>
-                </div>
-                <div class="item-title">مظلات غادية</div>
-              </article>
-              <!-- ---------------------------- -->
-              <article class="product-item-view">
-                <div class="product-item-img-content">
-                  <img src="./img/product_view/img-1.png" alt="" />
-                  <div class="view-more-content flex items-center-v-h">
-                    <p>عرض المزيد</p>
-                  </div>
-                </div>
-                <div class="item-title">مظلات غادية</div>
-              </article>
-              <!-- ---------------------------- -->
-              <article class="product-item-view">
-                <div class="product-item-img-content">
-                  <img src="./img/product_view/img-1.png" alt="" />
-                  <div class="view-more-content flex items-center-v-h">
-                    <p>عرض المزيد</p>
-                  </div>
-                </div>
-                <div class="item-title">مظلات غادية</div>
-              </article>
-              <!-- ---------------------------- -->
-              <article class="product-item-view">
-                <div class="product-item-img-content">
-                  <img src="./img/product_view/img-1.png" alt="" />
-                  <div class="view-more-content flex items-center-v-h">
-                    <p>عرض المزيد</p>
-                  </div>
-                </div>
-                <div class="item-title">مظلات غادية</div>
-              </article>
-              <!-- ---------------------------- -->
-              <article class="product-item-view">
-                <div class="product-item-img-content">
-                  <img src="./img/product_view/img-1.png" alt="" />
-                  <div class="view-more-content flex items-center-v-h">
-                    <p>عرض المزيد</p>
-                  </div>
-                </div>
-                <div class="item-title">مظلات غادية</div>
-              </article>
-              <!-- ---------------------------- -->
-              <article class="product-item-view">
-                <div class="product-item-img-content">
-                  <img src="./img/product_view/img-1.png" alt="" />
-                  <div class="view-more-content flex items-center-v-h">
-                    <p>عرض المزيد</p>
-                  </div>
-                </div>
-                <div class="item-title">مظلات غادية</div>
-              </article>
-              <!-- ---------------------------- -->
-              <article class="product-item-view">
-                <div class="product-item-img-content">
-                  <img src="./img/product_view/img-1.png" alt="" />
-                  <div class="view-more-content flex items-center-v-h">
-                    <p>عرض المزيد</p>
-                  </div>
-                </div>
-                <div class="item-title">مظلات غادية</div>
-              </article>
-              <!-- ---------------------------- -->
-              <article class="product-item-view">
-                <div class="product-item-img-content">
-                  <img src="./img/product_view/img-1.png" alt="" />
-                  <div class="view-more-content flex items-center-v-h">
-                    <p>عرض المزيد</p>
-                  </div>
-                </div>
-                <div class="item-title">مظلات غادية</div>
-              </article>
-              <!-- ---------------------------- -->
-              <article class="product-item-view">
-                <div class="product-item-img-content">
-                  <img src="./img/product_view/img-1.png" alt="" />
-                  <div class="view-more-content flex items-center-v-h">
-                    <p>عرض المزيد</p>
-                  </div>
-                </div>
-                <div class="item-title">مظلات غادية</div>
-              </article>
-              <!-- ---------------------------- -->
-            </div>
-            <!-- ############################################################################### -->
-            <!-- ############################################################################### -->
-            <div group_name="B" class="view-group-content flex flex-wrap item-align-fs items-fs">
-              <!-- ---------------------------- -->
-              <article class="product-item-view">
-                <div class="product-item-img-content">
-                  <img src="./img/product_view/img-1.png" alt="" />
-                  <div class="view-more-content flex items-center-v-h">
-                    <p>عرض المزيد</p>
-                  </div>
-                </div>
-                <div class="item-title">لبيبل لي منن منتاظلات</div>
-              </article>
-              <!-- ---------------------------- -->
-            </div>
-            <!-- ############################################################################### -->
-            <!-- ############################################################################### -->
-            <div group_name="C" class="view-group-content flex flex-wrap item-align-fs items-fs">
-              <!-- ---------------------------- -->
-              <article class="product-item-view">
-                <div class="product-item-img-content">
-                  <img src="./img/product_view/img-1.png" alt="" />
-                  <div class="view-more-content flex items-center-v-h">
-                    <p>عرض المزيد</p>
-                  </div>
-                </div>
-                <div class="item-title">لبيبل لي منن منتاظلات</div>
-              </article>
-              <!-- ---------------------------- -->
-            </div>
-            <!-- ############################################################################### -->
-            <!-- ############################################################################### -->
-            <div group_name="D" class="view-group-content flex flex-wrap item-align-fs items-fs">
-              <!-- ---------------------------- -->
-              <article class="product-item-view">
-                <div class="product-item-img-content">
-                  <img src="./img/product_view/img-1.png" alt="" />
-                  <div class="view-more-content flex items-center-v-h">
-                    <p>عرض المزيد</p>
-                  </div>
-                </div>
-                <div class="item-title">لبيبل لي منن منتاظلات</div>
-              </article>
-              <!-- ---------------------------- -->
-            </div>
-            <!-- ############################################################################### -->
-            <!-- ############################################################################### -->
-            <div group_name="E" class="view-group-content flex flex-wrap item-align-fs items-fs">
-              <!-- ---------------------------- -->
-              <article class="product-item-view">
-                <div class="product-item-img-content">
-                  <img src="./img/product_view/img-1.png" alt="" />
-                  <div class="view-more-content flex items-center-v-h">
-                    <p>عرض المزيد</p>
-                  </div>
-                </div>
-                <div class="item-title">لبيبل لي منن منتاظلات</div>
-              </article>
-              <!-- ---------------------------- -->
-            </div>
-            <!-- ############################################################################### -->
-            <!-- ############################################################################### -->
-            <div group_name="F" class="view-group-content flex flex-wrap item-align-fs items-fs">
-              <!-- ---------------------------- -->
-              <article class="product-item-view">
-                <div class="product-item-img-content">
-                  <img src="./img/product_view/img-1.png" alt="" />
-                  <div class="view-more-content flex items-center-v-h">
-                    <p>عرض المزيد</p>
-                  </div>
-                </div>
-                <div class="item-title">لبيبل لي منن منتاظلات</div>
-              </article>
-              <!-- ---------------------------- -->
-            </div>
-            <!-- ############################################################################### -->
+      <!-- ######################## -->
+      <!-- #### about us #### -->
+      <!-- ######################## -->
+
+      <!-- title header  -->
+      <div id="aboutUs" class="title-section flex items-center-h">
+        <div class="title-content flex items-center-h">
+          <div class="title-wrapper flex items-center-v-h">
+            <span class="title-text">من نحن</span>
           </div>
         </div>
+      </div>
 
+      <!-- paragraph aboutUs -->
+
+      <section class="aboutUs-container flex items-center-v-h">
+        <div class="aboutUs-content">
+          <p style="--d: 0s">
+            الواحة للمظلات هي أفضل مورد لستائر وقوف السيارات في قطر. نحن نقدم أعلى جودة وأسعار مخفضة لمظلات وقوف السيارات لأن لدينا مصنع
+            إنتاج مجهز تجهيزًا جيدًا ، ومصممين ومهندسين مدربين تدريباً عالياً ، ولدينا إيمان بقدرات عمالنا ذوي الخبرة التي تجعل منتجاتنا
+            فريدة من نوعها وبأسعار منخفضة في مظلات وقوف السيارات في قطر.
+          </p>
+          <p style="--d: 0s">
+            نحن غير مكلفون لأننا نستخدم التكنولوجيا بكفاءة وننظم إنتاجنا بطريقة تقل فيها نفايات المواد ، وتكاليف العمالة المنخفضة ، وتتطلب
+            وقتًا أقل لإكمال الوظيفة التي ستساعدنا مرة أخرى في منح عملائنا مظلات مواقف سيارات جيدة جدًا
+          </p>
+        </div>
+      </section>
+
+      <!-- ######################## -->
+      <!-- #### our product #### -->
+      <!-- ######################## -->
+
+      <!-- title header  -->
+      <div id="ourProducts" class="title-section flex items-center-h">
+        <div class="title-content flex items-center-h">
+          <div class="title-wrapper flex items-center-v-h">
+            <span class="title-text">منتجاتنا</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-mb-title flex items-center-v-h hide">
+        <div class="content-wrapper">
+          <p class="product-main-title-mb"></p>
+        </div>
+      </div>
+
+      <section id="product-view" class="ourProducts-container flex items-center-v-h">
         <!--  -->
+        <div class="ourProducts-content flex items-center-v-h">
+          <!-- products section -->
+          <div class="products-list-container flex items-center-v-h">
+            <div class="content-wrapper">
+              <ul class="products-list-content flex items-center-v-h dir-column">
+                <li product_name="A" class="product-list-link active">المظلات</li>
+                <li product_name="B" class="product-list-link">البراجولات</li>
+                <li product_name="C" class="product-list-link">السواتر</li>
+                <li product_name="D" class="product-list-link">حديد مشغول</li>
+                <li product_name="E" class="product-list-link">انواع الاقمشة</li>
+                <li product_name="F" class="product-list-link">اخرى</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- products view Items -->
+
+          <div class="products-view-items-container">
+            <div class="content-wrapper flex items-center-v-h">
+              <!-- ############################################################################### -->
+              <div group_name="A" class="view-group-content flex flex-wrap item-align-fs items-fs active">
+                <!-- ---------------------------- -->
+                <article class="product-item-view">
+                  <div class="product-item-img-content">
+                    <img src="./img/product_view/img-1.png" alt="" />
+                    <div class="view-more-content flex items-center-v-h">
+                      <p>عرض المزيد</p>
+                    </div>
+                  </div>
+                  <div class="item-title">لبيبل لي منن منتاظلات</div>
+                </article>
+                <!-- ---------------------------- -->
+                <article class="product-item-view">
+                  <div class="product-item-img-content">
+                    <img src="./img/product_view/img-1.png" alt="" />
+                    <div class="view-more-content flex items-center-v-h">
+                      <p>عرض المزيد</p>
+                    </div>
+                  </div>
+                  <div class="item-title">مظلات غادية</div>
+                </article>
+                <!-- ---------------------------- -->
+                <article class="product-item-view">
+                  <div class="product-item-img-content">
+                    <img src="./img/product_view/img-1.png" alt="" />
+                    <div class="view-more-content flex items-center-v-h">
+                      <p>عرض المزيد</p>
+                    </div>
+                  </div>
+                  <div class="item-title">مظلات غادية</div>
+                </article>
+                <!-- ---------------------------- -->
+                <article class="product-item-view">
+                  <div class="product-item-img-content">
+                    <img src="./img/product_view/img-1.png" alt="" />
+                    <div class="view-more-content flex items-center-v-h">
+                      <p>عرض المزيد</p>
+                    </div>
+                  </div>
+                  <div class="item-title">مظلات غادية</div>
+                </article>
+                <!-- ---------------------------- -->
+                <article class="product-item-view">
+                  <div class="product-item-img-content">
+                    <img src="./img/product_view/img-1.png" alt="" />
+                    <div class="view-more-content flex items-center-v-h">
+                      <p>عرض المزيد</p>
+                    </div>
+                  </div>
+                  <div class="item-title">مظلات غادية</div>
+                </article>
+                <!-- ---------------------------- -->
+                <article class="product-item-view">
+                  <div class="product-item-img-content">
+                    <img src="./img/product_view/img-1.png" alt="" />
+                    <div class="view-more-content flex items-center-v-h">
+                      <p>عرض المزيد</p>
+                    </div>
+                  </div>
+                  <div class="item-title">مظلات غادية</div>
+                </article>
+                <!-- ---------------------------- -->
+                <article class="product-item-view">
+                  <div class="product-item-img-content">
+                    <img src="./img/product_view/img-1.png" alt="" />
+                    <div class="view-more-content flex items-center-v-h">
+                      <p>عرض المزيد</p>
+                    </div>
+                  </div>
+                  <div class="item-title">مظلات غادية</div>
+                </article>
+                <!-- ---------------------------- -->
+                <article class="product-item-view">
+                  <div class="product-item-img-content">
+                    <img src="./img/product_view/img-1.png" alt="" />
+                    <div class="view-more-content flex items-center-v-h">
+                      <p>عرض المزيد</p>
+                    </div>
+                  </div>
+                  <div class="item-title">مظلات غادية</div>
+                </article>
+                <!-- ---------------------------- -->
+                <article class="product-item-view">
+                  <div class="product-item-img-content">
+                    <img src="./img/product_view/img-1.png" alt="" />
+                    <div class="view-more-content flex items-center-v-h">
+                      <p>عرض المزيد</p>
+                    </div>
+                  </div>
+                  <div class="item-title">مظلات غادية</div>
+                </article>
+                <!-- ---------------------------- -->
+                <article class="product-item-view">
+                  <div class="product-item-img-content">
+                    <img src="./img/product_view/img-1.png" alt="" />
+                    <div class="view-more-content flex items-center-v-h">
+                      <p>عرض المزيد</p>
+                    </div>
+                  </div>
+                  <div class="item-title">مظلات غادية</div>
+                </article>
+                <!-- ---------------------------- -->
+              </div>
+              <!-- ############################################################################### -->
+              <!-- ############################################################################### -->
+              <div group_name="B" class="view-group-content flex flex-wrap item-align-fs items-fs">
+                <!-- ---------------------------- -->
+                <article class="product-item-view">
+                  <div class="product-item-img-content">
+                    <img src="./img/product_view/img-1.png" alt="" />
+                    <div class="view-more-content flex items-center-v-h">
+                      <p>عرض المزيد</p>
+                    </div>
+                  </div>
+                  <div class="item-title">لبيبل لي منن منتاظلات</div>
+                </article>
+                <!-- ---------------------------- -->
+              </div>
+              <!-- ############################################################################### -->
+              <!-- ############################################################################### -->
+              <div group_name="C" class="view-group-content flex flex-wrap item-align-fs items-fs">
+                <!-- ---------------------------- -->
+                <article class="product-item-view">
+                  <div class="product-item-img-content">
+                    <img src="./img/product_view/img-1.png" alt="" />
+                    <div class="view-more-content flex items-center-v-h">
+                      <p>عرض المزيد</p>
+                    </div>
+                  </div>
+                  <div class="item-title">لبيبل لي منن منتاظلات</div>
+                </article>
+                <!-- ---------------------------- -->
+              </div>
+              <!-- ############################################################################### -->
+              <!-- ############################################################################### -->
+              <div group_name="D" class="view-group-content flex flex-wrap item-align-fs items-fs">
+                <!-- ---------------------------- -->
+                <article class="product-item-view">
+                  <div class="product-item-img-content">
+                    <img src="./img/product_view/img-1.png" alt="" />
+                    <div class="view-more-content flex items-center-v-h">
+                      <p>عرض المزيد</p>
+                    </div>
+                  </div>
+                  <div class="item-title">لبيبل لي منن منتاظلات</div>
+                </article>
+                <!-- ---------------------------- -->
+              </div>
+              <!-- ############################################################################### -->
+              <!-- ############################################################################### -->
+              <div group_name="E" class="view-group-content flex flex-wrap item-align-fs items-fs">
+                <!-- ---------------------------- -->
+                <article class="product-item-view">
+                  <div class="product-item-img-content">
+                    <img src="./img/product_view/img-1.png" alt="" />
+                    <div class="view-more-content flex items-center-v-h">
+                      <p>عرض المزيد</p>
+                    </div>
+                  </div>
+                  <div class="item-title">لبيبل لي منن منتاظلات</div>
+                </article>
+                <!-- ---------------------------- -->
+              </div>
+              <!-- ############################################################################### -->
+              <!-- ############################################################################### -->
+              <div group_name="F" class="view-group-content flex flex-wrap item-align-fs items-fs">
+                <!-- ---------------------------- -->
+                <article class="product-item-view">
+                  <div class="product-item-img-content">
+                    <img src="./img/product_view/img-1.png" alt="" />
+                    <div class="view-more-content flex items-center-v-h">
+                      <p>عرض المزيد</p>
+                    </div>
+                  </div>
+                  <div class="item-title">لبيبل لي منن منتاظلات</div>
+                </article>
+                <!-- ---------------------------- -->
+              </div>
+              <!-- ############################################################################### -->
+            </div>
+          </div>
+
+          <!--  -->
+        </div>
+      </section>
+
+      <!-- products view mobile back btn -->
+
+      <div class="products-view-back-content flex items-center-h">
+        <span class="product-back-btn">العودة الى منتجاتنا</span>
       </div>
-    </section>
 
-    <!-- products view mobile back btn -->
-
-    <div class="products-view-back-content flex items-center-h">
-      <span class="product-back-btn">العودة الى منتجاتنا</span>
-    </div>
-
-    <!-- ######################## -->
-    <!-- #### Contact US #### -->
-    <!-- ######################## -->
-    <!-- title header  -->
-    <div id="ourProducts" class="title-section flex items-center-h">
-      <div class="title-content flex items-center-h">
-        <div class="title-wrapper flex items-center-v-h">
-          <span class="title-text">للتواصل معنا</span>
+      <!-- ######################## -->
+      <!-- #### Contact US #### -->
+      <!-- ######################## -->
+      <!-- title header  -->
+      <div id="ourProducts" class="title-section flex items-center-h">
+        <div class="title-content flex items-center-h">
+          <div class="title-wrapper flex items-center-v-h">
+            <span class="title-text">للتواصل معنا</span>
+          </div>
         </div>
       </div>
+
+      <!-- contacts and social media sharing -->
+
+      <!-- ######################## -->
+      <!-- #### Our Location #### -->
+      <!-- ######################## -->
+
+      <!-- title header  -->
+      <!-- map Location -->
+
+      <!-- ######################## -->
+      <!-- #### Simple footer #### -->
+      <!-- ######################## -->
     </div>
-
-
-    <!-- contacts and social media sharing -->
-
-    <!-- ######################## -->
-    <!-- #### Our Location #### -->
-    <!-- ######################## -->
-
-    <!-- title header  -->
-    <!-- map Location -->
-
-    <!-- ######################## -->
-    <!-- #### Simple footer #### -->
-    <!-- ######################## -->
-
     <script type="module" src="./js/app.js"></script>
   </body>
 </html>
