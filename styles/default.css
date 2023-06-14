@@ -18,14 +18,14 @@ body {
   -webkit-font-smoothing: antialiased;
   letter-spacing: normal;
   /* position: relative; */
+  scroll-behavior: smooth;
   width: 100vw;
   height: 100vh;
 }
 
-.blank-content-open{
+body[blank-content-open] {
   overflow: hidden;
 }
-
 
 a {
   text-decoration: none;

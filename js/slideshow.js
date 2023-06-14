@@ -1,9 +1,14 @@
 let slideshow_images = [
-  "./img/slide_show/img1.jpg",
-  "./img/slide_show/img2.jpg",
-  "./img/slide_show/img3.jpg",
-  "./img/slide_show/img4.jpg",
-  "./img/slide_show/img5.jpg",
+  "/img/ads/img-1.png",
+  "/img/ads/img-2.jpg",
+  "/img/ads/img-3.png",
+  "/img/ads/img-4.png",
+  "/img/ads/img-5.png",
+  "/img/ads/img-11.jpg",
+  "/img/ads/img-7.png",
+  "/img/ads/img-8.png",
+  "/img/ads/img-9.png",
+  "/img/ads/img-10.png",
 ];
 
 export default function slideshow() {
@@ -77,7 +82,7 @@ export default function slideshow() {
         "afterbegin",
         `
           <div class="slide-item fade">
-            <img src="${img}" alt="" />
+            <img src="${img}" alt="image-ad" />
           </div>
         `
       );

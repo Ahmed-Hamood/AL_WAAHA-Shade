@@ -7,8 +7,8 @@ html {
   --mobile-menu-btn-border: 3px solid var(--secondary-color);
 
   --nav-menu-selected-border-color: rgba(204, 161, 45, 0.66);
-  --slideshow-dot-active-bg-color: #DDB74F;
-  --slideshow-dot-non-active-bg-color: rgba(0, 0, 0, 0.264);
+  --slideshow-dot-active-bg-color: #51a2a2;
+  --slideshow-dot-non-active-bg-color: rgba(0, 0, 0, 0.262);
 
  
   --aboutUs-bg-color: #669999;

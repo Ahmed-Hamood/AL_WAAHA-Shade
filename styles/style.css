@@ -208,14 +208,14 @@
 
 @media screen and (max-width: 460px) {
   .slideshow-container {
-    margin-top: 11rem;
+    margin-top: 12rem;
   }
 }
 
 .slideshow-items-content {
   position: relative;
   width: 100%;
-  max-width: 700px;
+  max-width: 550px;
   padding: 0 8px;
 }
 
@@ -231,7 +231,7 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   width: 100%;
   /* aspect-ratio: 4/3; */
-  aspect-ratio: 16/9;
+  /* aspect-ratio: 16/9; */
   object-fit: fill;
 }
 
@@ -277,7 +277,7 @@
   text-align: center;
   margin-top: 25px;
   border-radius: 30px;
-  background: #00000018;
+  /* background: #00000018; */
   padding: 8px 33px;
 }
 
@@ -460,6 +460,7 @@
   max-width: 320px;
   overflow-y: auto;
   overflow-x: hidden;
+ animation: fadeAnimation 0.5s;
 }
 
 .products-list-container .content-wrapper {

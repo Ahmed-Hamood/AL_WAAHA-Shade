@@ -23,13 +23,14 @@ function Run() {
   for (let i = 0; i < navbar_items.length; i++) {
     navbar_items[i].addEventListener("click", (item) => {
       let getNav = item.target.getAttribute("link-ref");
-      let addOffset = 120;
+      let addOffset = -240;
 
       for (let i = 0; i < navbar_items.length; i++) navbar_items[i].classList.remove("active");
 
       item.target.classList.add("active");
 
       if (getNav == "main") addOffset = 0;
+      // if (getNav == "aboutUs") addOffset = 0;
       window.scrollTo(0, document.getElementById(getNav).offsetTop + addOffset);
     });
   }
@@ -102,13 +103,13 @@ function Run() {
     } else {
       this.document.body.classList.remove("header-min");
     }
-  });
+  }, { passive: true });
 
   // active mobile menu btn
   // -----------------------------
 
   mb_menu_btn.addEventListener("click", () => {
-    document.body.classList.add("blank-content-open")
+    document.body.setAttribute("blank-content-open","")
     document.querySelector(".blank-content").classList.add("show")
     mb_menu_btn.classList.add("hide")
   })
