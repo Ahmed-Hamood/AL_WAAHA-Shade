@@ -10,7 +10,7 @@ html {
  
   --aboutUs-bg-color: #669999;
   --aboutUs-text-color: #ffff;
-  --aboutUs-border: 8px solid #CCAC56;
+  --aboutUs-border: 5px solid #CCAC56;
 
 
   --ourProducts-products-list-bg: #669999;
@@ -18,7 +18,7 @@ html {
   --ourProducts-products-list-link-active-bg: rgb(193, 162, 76);
   --ourProducts-products-list-link-border: 1px solid rgb(239, 194, 69);
 
-  --ourProducts-products-view-bg: #79797927;
+  --ourProducts-products-view-bg: #ffffff81;
   --ourProducts-products-view-img-item-border: 3px solid #527b7b8c;
   --ourProducts-products-view-title-bg-color: #527b7b;
  }

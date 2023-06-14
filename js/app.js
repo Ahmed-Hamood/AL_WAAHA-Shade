@@ -1,7 +1,6 @@
 import slideshow from "./slideshow.js";
 
 function Run() {
-
   let body_element = document.querySelector("body");
 
   let navbar_items = document.querySelectorAll(".navbar-item");
@@ -12,6 +11,9 @@ function Run() {
   let products_view_items_container = document.querySelector(".products-view-items-container");
 
   let back_btn = document.querySelector(".products-view-back-content");
+
+  let main_product_title_mb = document.querySelector(".product-mb-title");
+  let main_product_text = document.querySelector(".product-main-title-mb");
 
   slideshow();
 
@@ -37,16 +39,25 @@ function Run() {
 
       item.target.classList.add("active");
 
+ 
+
       view_group_content.forEach((ele) => {
         ele.classList.remove("active");
       });
 
-      if (window.innerWidth <= 855) {
+      if (window.innerWidth <= 1060) {
+        products_list_container.classList.remove("mb-active");
         products_list_container.classList.add("no-display");
-        products_view_items_container.classList.add("active");
-        back_btn.classList.add("active");
-      } else {
+
         products_view_items_container.classList.remove("no-display");
+        products_view_items_container.classList.add("mb-active");
+
+        back_btn.classList.add("mb-active");
+
+     main_product_title_mb.classList.remove("hide");
+      main_product_title_mb.classList.add("show");
+      main_product_text.textContent = item.target.textContent
+
       }
 
       view_group_content.forEach((el) => {
@@ -63,33 +74,39 @@ function Run() {
 
   // back btn active
 
-  back_btn.addEventListener("click", (ev) => {
+  back_btn.addEventListener("click", () => {
     products_list_container.classList.remove("no-display");
-    products_view_items_container.classList.remove("active");
-    back_btn.classList.remove("active");
+    products_list_container.classList.add("mb-active");
+
+    products_view_items_container.classList.add("no-display");
+    products_view_items_container.classList.remove("mb-active");
+
+    back_btn.classList.remove("mb-active");
+
+    main_product_title_mb.classList.remove("show");
+    main_product_title_mb.classList.add("hide");
 
     for (let i = 0; i < product_list_links.length; i++) product_list_links[i].classList.remove("active");
   });
 
-
   // ---------------------
-  let HorPos = null
+  let HorPos = null;
 
   body_element.addEventListener(
     "scroll",
-    event => {
-     HorPos = event.target.scrollTop
-    
-    //  if (window.innerWidth < 400) {
+    (event) => {
+      HorPos = event.target.scrollTop;
+
+      //  if (window.innerWidth < 400) {
       if (HorPos >= 330) {
-         alert("ffff")
+        alert("ffff");
       } else {
-         alert("ffff")
+        alert("ffff");
       }
-    //  }
+      //  }
     },
     { passive: true }
-  )
+  );
 }
 
 Run();
