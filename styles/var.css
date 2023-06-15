@@ -1,20 +1,19 @@
 html {
-  --main-color: #CCAC56;
+  --main-color: #ccac56;
   --secondary-color: #669999;
-  --main-border-color: #CCAC56;
+  --main-border-color: #ccac56;
 
   --mobile-menu-btn-bg: rgb(255, 255, 255);
   --mobile-menu-btn-border: 3px solid var(--secondary-color);
+  --mobile-close-sidebar-btn-border: 3px solid #669999;
 
   --nav-menu-selected-border-color: rgba(204, 161, 45, 0.66);
   --slideshow-dot-active-bg-color: #51a2a2;
   --slideshow-dot-non-active-bg-color: rgba(0, 0, 0, 0.262);
 
- 
   --aboutUs-bg-color: #669999;
   --aboutUs-text-color: #ffff;
-  --aboutUs-border: 5px solid #CCAC56;
-
+  --aboutUs-border: 5px solid #ccac56;
 
   --ourProducts-products-list-bg: #316b6b;
   --ourProducts-products-list-link-color: #ffff;
@@ -24,4 +23,4 @@ html {
   --ourProducts-products-view-bg: #ffffff81;
   --ourProducts-products-view-img-item-border: 3px solid #527b7b8c;
   --ourProducts-products-view-title-bg-color: #527b7b;
- }
+}

@@ -15,6 +15,7 @@ function Run() {
   let main_product_text = document.querySelector(".product-main-title-mb");
 
   let mb_menu_btn = document.querySelector(".mb-menu-btn");
+  let close_sidebar_btn = document.querySelector(".close-sidebar-btn")
 
   slideshow();
   ourProducts()
@@ -111,6 +112,12 @@ function Run() {
     document.body.setAttribute("blank-content-open","")
     document.querySelector(".blank-content").classList.add("show")
     mb_menu_btn.classList.add("hide")
+  })
+
+  close_sidebar_btn.addEventListener("click", () => {
+    document.querySelector(".blank-content").classList.remove("show")
+    mb_menu_btn.classList.remove("hide")
+    document.body.removeAttribute("blank-content-open")
   })
 
 

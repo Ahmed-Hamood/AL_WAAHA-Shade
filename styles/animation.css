@@ -7,8 +7,7 @@
   }
 }
 
-
- @keyframes nav-border_animation {
+@keyframes nav-border_animation {
   from {
     width: 20%;
   }
@@ -46,7 +45,6 @@
 @-webkit-keyframes reveal {
   from {
     transform: translateY(20px);
-     
   }
   to {
     opacity: 1;
@@ -57,7 +55,6 @@
 @keyframes reveal {
   from {
     transform: translateY(20px);
-     
   }
   to {
     opacity: 1;
@@ -70,7 +67,6 @@
 @keyframes product_list_link_animation {
   from {
     transform: translateX(-50px);
-     
   }
   to {
     opacity: 1;
@@ -81,9 +77,19 @@
 @keyframes fadeAnimation {
   from {
     opacity: 0;
-     
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes mb_menu_btn_animation {
+  from {
+    transform: translateY(70%);
+  }
+}
+@keyframes close_btn_animation {
+  from {
+    transform: translateX(100px);
   }
 }
