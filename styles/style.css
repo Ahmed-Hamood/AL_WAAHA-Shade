@@ -501,6 +501,7 @@
 
 @media screen and (max-width: 1085px) {
   .products-list-container .products-list-content .product-list-link {
+    color: #d7ab31;
     background: #000000af;
     border-radius: 5px;
     border: 2px solid #bd972d;
@@ -525,6 +526,7 @@
 }
 
 .products-list-container .products-list-content .product-list-link.active {
+  color: #d7ab31;
   cursor: default;
 }
 

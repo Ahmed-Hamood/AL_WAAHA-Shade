@@ -16,9 +16,9 @@ html {
   --aboutUs-border: 5px solid #CCAC56;
 
 
-  --ourProducts-products-list-bg: #669999;
+  --ourProducts-products-list-bg: #316b6b;
   --ourProducts-products-list-link-color: #ffff;
-  --ourProducts-products-list-link-active-bg: rgb(193, 162, 76);
+  --ourProducts-products-list-link-active-bg: #000000af;
   --ourProducts-products-list-link-border: 1px solid rgb(239, 194, 69);
 
   --ourProducts-products-view-bg: #ffffff81;
