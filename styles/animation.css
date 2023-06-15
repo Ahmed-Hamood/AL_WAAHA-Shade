@@ -85,7 +85,7 @@
 
 @keyframes mb_menu_btn_animation {
   from {
-    transform: translateY(70%);
+    transform: translate(-45%, 100px);
   }
 }
 @keyframes close_btn_animation {
@@ -99,4 +99,3 @@
     transform: translateX(-80px);
   }
 }
-

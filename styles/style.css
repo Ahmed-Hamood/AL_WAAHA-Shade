@@ -89,7 +89,7 @@
   position: fixed;
   bottom: 0;
   left: 47%;
-  transform: translate(-45%, 0);
+  transform: translate(-47%, 0);
   width: 60px;
   height: 60px;
   margin: 12px;
@@ -164,19 +164,17 @@
   height: 5px;
   border-radius: 30px;
   background: var(--nav-menu-selected-border-color);
-  bottom: -4px;
+  bottom: -3px;
   left: 0;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
   animation: nav-border_animation 0.4s cubic-bezier(1, -0.06, 0.58, 1) forwards;
 }
 
-.navbar-container .menu-content .navbar-item a {
+.navbar-container .menu-content .navbar-item {
   color: var(--main-color);
   font-size: 1.2rem;
-  padding: 0 8px;
-
-  pointer-events: none;
+  padding: 8px 8px;
 }
 
 .navbar-container .menu-content .navbar-item a:hover {
@@ -212,15 +210,18 @@
   position: fixed;
   height: 70px;
   width: 70px;
-  bottom: 0;
-  right: 10px;
+  /* bottom: 0;
+  right: 10px; */
   background: #0b0b0b28;
   border: var(--mobile-close-sidebar-btn-border);
   border-radius: 50%;
   z-index: 101;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
 
-  animation: close_btn_animation 0.4s forwards;
+  animation: fadeAnimation 0.4s forwards;
 }
 
 .close-sidebar-btn .close-svg {
@@ -233,13 +234,44 @@
 .sidebar-menu {
   position: absolute;
   background: #fffffff9;
-  height: 500px;
-  width: 250px;
+  height: 400px;
+  width: 100%;
+  max-width: 250px;
   border: 3px solid var(--secondary-color);
   border-radius: 20px;
   margin-left: 10px;
-
+  padding: 0 12px;
   animation: mb_sidebar_animation 0.3s forwards;
+}
+
+.sidebar-menu .content-wrapper {
+  height: 100%;
+}
+
+.sidebar-menu .mb_menu-content {
+  max-width: 200px;
+  width: 100%;
+}
+
+.sidebar-menu .mb_menu-item {
+  font-size: 1.2rem;
+  color: #ffff;
+  width: 100%;
+  background: var(--secondary-color);
+  padding: 14px 0;
+  margin-bottom: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s color;
+}
+
+.sidebar-menu .mb_menu-item:hover:not(.mb_menu-item.active) {
+  color: #d4d4d4;
+}
+
+.sidebar-menu .mb_menu-item.active {
+  background: #cc9c17;
+  border: 2px solid #a3a3a3;
 }
 
 /* #endregion */

@@ -95,6 +95,10 @@ a {
   align-items: center;
 }
 
+.items-align-f-end {
+  align-items: flex-end;
+}
+
 .item-align-fs {
   align-content: flex-start;
 }

@@ -21,10 +21,16 @@
     <!-- ######################## -->
     <!-- #### mobile sidebar with menu #### -->
     <!-- ######################## -->
-    <div class="blank-content flex items-center-v">
+    <div class="blank-content flex items-center-v-h">
       <aside class="sidebar-menu">
-        <div class="content-wrapper">
-
+        <div class="content-wrapper flex items-center-v-h">
+          <ul class="mb_menu-content flex items-center-v-h dir-column">
+            <li link-ref="main" class="mb_menu-item active">الرئيسية</li>
+            <li link-ref="aboutUs" class="mb_menu-item" class="">من نحن</li>
+            <li link-ref="ourProducts" class="mb_menu-item" class="">منتجاتنا</li>
+            <li link-ref="contactUs" class="mb_menu-item" class="">للتواصل معنا</li>
+            <li link-ref="ourLocation" class="mb_menu-item" class="">موقعنا</li>
+          </ul>
         </div>
       </aside>
 
@@ -71,21 +77,11 @@
 
           <nav class="navbar-container flex items-center-v-h">
             <ul class="menu-content flex items-row-reverse items-center-se">
-              <li link-ref="main" class="navbar-item active">
-                <a>الرئيسية</a>
-              </li>
-              <li link-ref="aboutUs" class="navbar-item" class="">
-                <a>من نحن</a>
-              </li>
-              <li link-ref="ourProducts" class="navbar-item" class="">
-                <a>منتجاتنا</a>
-              </li>
-              <li link-ref="contactUs" class="navbar-item" class="">
-                <a>للتواصل معنا</a>
-              </li>
-              <li link-ref="ourLocation" class="navbar-item" class="">
-                <a>موقعنا</a>
-              </li>
+              <li link-ref="main" class="navbar-item active">الرئيسية</li>
+              <li link-ref="aboutUs" class="navbar-item" class="">من نحن</li>
+              <li link-ref="ourProducts" class="navbar-item" class="">منتجاتنا</li>
+              <li link-ref="contactUs" class="navbar-item" class="">للتواصل معنا</li>
+              <li link-ref="ourLocation" class="navbar-item" class="">موقعنا</li>
             </ul>
           </nav>
         </div>

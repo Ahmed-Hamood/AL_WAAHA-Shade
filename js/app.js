@@ -15,10 +15,12 @@ function Run() {
   let main_product_text = document.querySelector(".product-main-title-mb");
 
   let mb_menu_btn = document.querySelector(".mb-menu-btn");
-  let close_sidebar_btn = document.querySelector(".close-sidebar-btn")
+  let close_sidebar_btn = document.querySelector(".close-sidebar-btn");
+
+  let mb_sidebar_menu_items = document.querySelectorAll(".mb_menu-item");
 
   slideshow();
-  ourProducts()
+  ourProducts();
 
   // active menu item when clicked
   for (let i = 0; i < navbar_items.length; i++) {
@@ -32,6 +34,26 @@ function Run() {
 
       if (getNav == "main") addOffset = 0;
       window.scrollTo(0, document.getElementById(getNav).offsetTop - addOffset);
+    });
+  }
+
+  // mobile menu items
+  for (let i = 0; i < mb_sidebar_menu_items.length; i++) {
+    mb_sidebar_menu_items[i].addEventListener("click", (item) => {
+
+      let getNav = item.target.getAttribute("link-ref");
+      let addOffset = 220;
+
+      for (let i = 0; i < mb_sidebar_menu_items.length; i++) mb_sidebar_menu_items[i].classList.remove("active");
+
+      item.target.classList.add("active");
+
+      if (getNav == "main") addOffset = 0;
+      window.scrollTo(0, document.getElementById(getNav).offsetTop - addOffset);
+
+      document.querySelector(".blank-content").classList.remove("show");
+      mb_menu_btn.classList.remove("hide");
+      document.body.removeAttribute("blank-content-open");
     });
   }
 
@@ -97,30 +119,32 @@ function Run() {
   // minimize header when scroll
   // -----------------------------
 
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 550) {
-      this.document.body.classList.add("header-min");
-    } else {
-      this.document.body.classList.remove("header-min");
-    }
-  }, { passive: true });
+  window.addEventListener(
+    "scroll",
+    function () {
+      if (window.scrollY > 550) {
+        this.document.body.classList.add("header-min");
+      } else {
+        this.document.body.classList.remove("header-min");
+      }
+    },
+    { passive: true }
+  );
 
   // active mobile menu btn
   // -----------------------------
 
   mb_menu_btn.addEventListener("click", () => {
-    document.body.setAttribute("blank-content-open","")
-    document.querySelector(".blank-content").classList.add("show")
-    mb_menu_btn.classList.add("hide")
-  })
+    document.body.setAttribute("blank-content-open", "");
+    document.querySelector(".blank-content").classList.add("show");
+    mb_menu_btn.classList.add("hide");
+  });
 
   close_sidebar_btn.addEventListener("click", () => {
-    document.querySelector(".blank-content").classList.remove("show")
-    mb_menu_btn.classList.remove("hide")
-    document.body.removeAttribute("blank-content-open")
-  })
-
-
+    document.querySelector(".blank-content").classList.remove("show");
+    mb_menu_btn.classList.remove("hide");
+    document.body.removeAttribute("blank-content-open");
+  });
 }
 
 Run();
