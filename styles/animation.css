@@ -93,3 +93,10 @@
     transform: translateX(100px);
   }
 }
+
+@keyframes mb_sidebar_animation {
+  from {
+    transform: translateX(-80px);
+  }
+}
+

@@ -5,7 +5,7 @@ html {
 
   --mobile-menu-btn-bg: rgb(255, 255, 255);
   --mobile-menu-btn-border: 3px solid var(--secondary-color);
-  --mobile-close-sidebar-btn-border: 3px solid #669999;
+  --mobile-close-sidebar-btn-border: 2px solid #669999;
 
   --nav-menu-selected-border-color: rgba(204, 161, 45, 0.66);
   --slideshow-dot-active-bg-color: #51a2a2;
