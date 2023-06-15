@@ -501,17 +501,14 @@
 
 @media screen and (max-width: 1085px) {
   .products-list-container .products-list-content .product-list-link {
-    background: #4b7070;
+    background: #000000af;
     border-radius: 5px;
-    border: 1px solid #3e5d5d;
+    border: 2px solid #bd972d;
     max-width: 250px;
   }
 }
 
-.products-list-container .products-list-content .product-list-link:last-child {
-  border: none;
-}
-
+ 
 .products-list-container .products-list-content .product-list-link.active::after {
   content: "";
   position: absolute;
