@@ -19,8 +19,8 @@ body {
   letter-spacing: normal;
   /* position: relative; */
   scroll-behavior: smooth;
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw;
+  height: 100vh; */
 }
 
 body[blank-content-open] {

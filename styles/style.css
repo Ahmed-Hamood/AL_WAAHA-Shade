@@ -460,7 +460,7 @@
   max-width: 320px;
   overflow-y: auto;
   overflow-x: hidden;
- animation: fadeAnimation 0.5s;
+  animation: fadeAnimation 0.5s;
 }
 
 .products-list-container .content-wrapper {
@@ -749,3 +749,84 @@
 /* #endregion */
 
 /* #endregion */
+
+/* #region - contact us section */
+
+/* #endregion */
+
+.contactInfo-container {
+  background: #00000025;
+  width: 100%;
+  padding: 22px 12px;
+}
+
+.contactInfo-container .content-wrapper {
+  max-width: 850px;
+  width: 100%;
+  padding: 0 8px;
+}
+
+.contactInfo-container .contactInfo-left-section,
+.contactInfo-container .contactInfo-right-section {
+  max-width: 400px;
+  width: 100%;
+}
+
+.contactInfo-item {
+  margin-bottom: 12px;
+  margin-right: 5px;
+  height: 50px;
+  width: 100%;
+}
+
+.contactInfo-item:last-child {
+  margin-bottom: 0;
+}
+
+.contactInfo-item .contact-svg-icon {
+  background: #fdfdf0;
+  border: 1px solid gray;
+  width: 60px;
+  margin-right: 3px;
+  border: 2px solid #bf96248f;
+}
+
+.contactInfo-item .contact-svg-icon i {
+  width: 30px;
+  height: 30px;
+}
+
+.contactInfo-item .contact-svg-icon .mobile-svg {
+  margin-left: 5px;
+}
+.contactInfo-item .contact-svg-icon .email-svg {
+  margin-top: 5px;
+  margin-left: 2px;
+  width: 35px;
+}
+
+.contactInfo-item .contactInfo-text-link {
+  border: 2px solid #bf96248f;
+  background: #fdfdf0;
+  color: var(--secondary-color);
+  max-width: 400px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.contactInfo-item .contactInfo-text-link p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 880px) {
+  .contactInfo-container .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactInfo-container .contactInfo-left-section {
+    margin-bottom: 14px;
+  }
+}
