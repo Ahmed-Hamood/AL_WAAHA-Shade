@@ -34,6 +34,18 @@
 .mb-logo-banner {
   background: #ffffff;
   display: none;
+  padding: 4px 0;
+}
+
+.mb-logo-banner img {
+  width: 30px;
+}
+
+.mb-logo-banner p {
+  color: var(--secondary-color);
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 18px;
 }
 
 @media screen and (max-width: 550px) {
