@@ -2,8 +2,6 @@ import ourProducts from "./ourProducts.js";
 import slideshow from "./slideshow.js";
 
 function Run() {
-  let body_element = document.querySelector(".body-container");
-
   let navbar_items = document.querySelectorAll(".navbar-item");
   let product_list_links = document.querySelectorAll(".product-list-link");
   let view_group_content = document.querySelectorAll(".view-group-content");

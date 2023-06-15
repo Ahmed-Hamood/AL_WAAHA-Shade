@@ -73,7 +73,7 @@
 
 /* #region - mobile btn */
 .mb-menu-btn {
-  /* display: none; */
+  display: none;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -93,7 +93,7 @@
 
 @media screen and (max-width: 460px) {
   .mb-menu-btn {
-    display: block;
+    /* display: block; */
   }
 }
 
@@ -752,8 +752,6 @@
 
 /* #region - contact us section */
 
-/* #endregion */
-
 .contactInfo-container {
   background: #00000025;
   width: 100%;
@@ -837,3 +835,5 @@
     margin-bottom: 14px;
   }
 }
+
+/* #endregion */
