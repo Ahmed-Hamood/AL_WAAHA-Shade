@@ -78,6 +78,10 @@ a {
   /* display: none !important; */
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 .flex {
   display: flex;
 }

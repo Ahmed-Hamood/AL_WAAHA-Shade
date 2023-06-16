@@ -15,7 +15,13 @@
   background-size: 70px auto;
   background-position: 100px;
 
+  transition: 0.4s opacity;
+
   /* height: 128px; */
+}
+
+.header-min .logo-header {
+  opacity: 0;
 }
 
 .log-content {
@@ -24,25 +30,22 @@
 }
 
 .logo-img {
-  /* width: 100%; */
   width: 130px;
-  transition: 300ms all;
+  transition: 0.4s width;
 }
 
-.header-min .logo-img {
-  /* width: 100px; */
-}
+
 
 .mb-logo-banner {
-  background: #000000ce;
   display: none;
+  background: #000000ce;
   height: 50px;
   border-radius: 0 0 20px 20px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .mb-logo-banner img {
-  width: 40px;
+  width: 45px;
   margin: 0 26px;
 }
 
@@ -53,23 +56,21 @@
 }
 
 @media screen and (max-width: 550px) {
-  .header-container {
-    /* background-position: 84px 35px;
-    background-size: 60px auto; */
+  .logo-header {
+    background-size: 50px auto;
   }
 
   .logo-img {
     width: 140px;
   }
 
-  .header-min .logo-img {
-    width: 0px;
-    opacity: 0;
-  }
-
   .header-min .mb-logo-banner {
     display: flex;
   }
+  
+  .header-min .logo-img {
+  width: 0px;
+}
 }
 
 .banner-content {
@@ -268,7 +269,6 @@
   text-align: center;
   cursor: pointer;
   transition: 0.2s color;
- 
 }
 
 .sidebar-menu .mb_menu-item:hover:not(.mb_menu-item.active) {
