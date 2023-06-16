@@ -14,6 +14,8 @@
   background-repeat: repeat-x;
   background-size: 70px auto;
   background-position: 100px;
+
+  /* height: 128px; */
 }
 
 .log-content {
@@ -23,7 +25,7 @@
 
 .logo-img {
   /* width: 100%; */
-  width: 140px;
+  width: 130px;
   transition: 300ms all;
 }
 
@@ -32,26 +34,28 @@
 }
 
 .mb-logo-banner {
-  background: #ffffff;
+  background: #000000ce;
   display: none;
-  padding: 4px 0;
+  height: 50px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .mb-logo-banner img {
-  width: 30px;
+  width: 40px;
+  margin: 0 26px;
 }
 
 .mb-logo-banner p {
   color: var(--secondary-color);
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  margin: 0 18px;
 }
 
 @media screen and (max-width: 550px) {
   .header-container {
-    background-position: 84px 35px;
-    background-size: 60px auto;
+    /* background-position: 84px 35px;
+    background-size: 60px auto; */
   }
 
   .logo-img {
@@ -72,6 +76,7 @@
   background: var(--main-color);
   text-align: center;
   padding: 8px 5px;
+  margin-top: 8px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -263,6 +268,7 @@
   text-align: center;
   cursor: pointer;
   transition: 0.2s color;
+ 
 }
 
 .sidebar-menu .mb_menu-item:hover:not(.mb_menu-item.active) {
