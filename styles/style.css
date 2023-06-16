@@ -293,8 +293,8 @@
 }
 
 .sidebar-menu .mb_menu-item.active {
-  background: #cc9c17;
-  border: 2px solid #a3a3a3;
+  /* background: #cc9c17;
+  border: 2px solid #a3a3a3; */
 }
 
 /* #endregion */

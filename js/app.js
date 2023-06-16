@@ -41,11 +41,11 @@ function Run() {
   for (let i = 0; i < mb_sidebar_menu_items.length; i++) {
     mb_sidebar_menu_items[i].addEventListener("click", (item) => {
       let getNav = item.target.getAttribute("link-ref");
-      let addOffset = 220;
+      let addOffset = 60;
 
       for (let i = 0; i < mb_sidebar_menu_items.length; i++) mb_sidebar_menu_items[i].classList.remove("active");
 
-      item.target.classList.add("active");
+      // item.target.classList.add("active");
 
       if (getNav == "main") addOffset = 0;
       window.scrollTo(0, document.getElementById(getNav).offsetTop - addOffset);
