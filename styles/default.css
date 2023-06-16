@@ -17,10 +17,18 @@ body {
   text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   letter-spacing: normal;
-  /* position: relative; */
   scroll-behavior: smooth;
-  /* width: 100vw;
-  height: 100vh; */
+  height: 100vh; 
+}
+
+body {
+  margin-top: 220px;
+}
+
+@media screen and (max-width: 460px) {
+  body {
+    margin-top: 160px;
+  }
 }
 
 body[blank-content-open] {
