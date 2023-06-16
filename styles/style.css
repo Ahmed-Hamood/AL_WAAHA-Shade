@@ -16,7 +16,7 @@
   background-position: 100px;
   height: var(--header-height);
 
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 20px 20px;
   margin: 0 6px;
   transition: 400ms opacity;
 }
@@ -54,7 +54,6 @@
 @media screen and (max-width: 550px) {
   .logo-header {
     background-size: 50px auto;
-    border-radius: 0 0 40px 40px;
   }
 
   .header-min .logo-header {
