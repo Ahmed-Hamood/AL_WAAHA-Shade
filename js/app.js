@@ -40,7 +40,6 @@ function Run() {
   // mobile menu items
   for (let i = 0; i < mb_sidebar_menu_items.length; i++) {
     mb_sidebar_menu_items[i].addEventListener("click", (item) => {
-
       let getNav = item.target.getAttribute("link-ref");
       let addOffset = 220;
 
@@ -124,6 +123,7 @@ function Run() {
     function () {
       if (window.scrollY > 550) {
         this.document.body.classList.add("header-min");
+        window.moveTo(0, 0);
       } else {
         this.document.body.classList.remove("header-min");
       }
@@ -145,6 +145,7 @@ function Run() {
     mb_menu_btn.classList.remove("hide");
     document.body.removeAttribute("blank-content-open");
   });
+
 }
 
 Run();

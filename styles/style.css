@@ -41,14 +41,19 @@
 }
 
 .mb-logo-header .mb-logo-img {
-  width: 40px;
-  margin: 0 22px;
+  width: 32px;
+  height: 32px;
+  margin: 0 33px;
 }
 
 .mb-logo-header p {
   color: var(--secondary-color);
   font-size: 1.2rem;
   font-weight: 600;
+}
+
+.mb-logo-header p:last-child {
+  font-size: 1.4rem;
 }
 
 @media screen and (max-width: 550px) {
@@ -92,10 +97,12 @@
   font-size: 1.2rem;
   font-weight: 500; */
 }
+
 .banner-content img {
   max-width: 600px;
   width: 100%;
 }
+
 
 /* #endregion */
 
