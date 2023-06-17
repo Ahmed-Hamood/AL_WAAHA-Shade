@@ -18,6 +18,7 @@ function Run() {
   let close_sidebar_btn = document.querySelector(".close-sidebar-btn");
 
   let mb_sidebar_menu_items = document.querySelectorAll(".mb_menu-item");
+  let aboutUs_txt_animation = true;
 
   slideshow();
   ourProducts();
@@ -127,6 +128,15 @@ function Run() {
       } else {
         this.document.body.classList.remove("header-min");
       }
+
+      if (window.scrollY > 700) { 
+        if(aboutUs_txt_animation) {
+          this.document.querySelector(".aboutUs-content").classList.add("animation")
+          aboutUs_txt_animation = false
+
+        }
+      }
+
     },
     { passive: true }
   );

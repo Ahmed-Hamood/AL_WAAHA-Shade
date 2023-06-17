@@ -12,12 +12,12 @@
   background: rgba(0, 0, 0, 0.58);
   background-image: url("../img/dots_design.png");
   background-repeat: repeat-x;
-  background-size: 50px auto;
-  background-position: 100px;
+  background-size: 80px auto;
+  background-position: 147px;
   height: var(--header-height);
 
   border-radius: 0 0 20px 20px;
-  margin: 0 6px;
+  margin: 0 4px;
   transition: 400ms opacity;
 }
 
@@ -41,15 +41,16 @@
 }
 
 .mb-logo-header .mb-logo-img {
-  width: 32px;
-  height: 32px;
-  margin: 0 33px;
+  width: 38px;
+  height: 38px;
+  margin: 0 25px;
 }
 
 .mb-logo-header p {
   color: var(--secondary-color);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
+  text-align: center;
 }
 
 .mb-logo-header p:last-child {
@@ -68,6 +69,7 @@
 
   .header-min .mb-logo-header {
     display: flex;
+    border-bottom: 3px solid rgba(80, 80, 80, 0.517);
   }
 
   .header-min .logo-img {
@@ -102,7 +104,6 @@
   max-width: 600px;
   width: 100%;
 }
-
 
 /* #endregion */
 
@@ -477,7 +478,11 @@
 
   display: block;
   opacity: 0;
-  animation: reveal 0.5s forwards var(--d);
+ 
+}
+
+.aboutUs-container .aboutUs-content.animation p {
+   animation: reveal 0.5s forwards var(--d);
 }
 
 .aboutUs-container .aboutUs-content p:last-child {
@@ -656,6 +661,10 @@
   .products-view-items-container.no-display,
   .products-list-container.no-display {
     display: none;
+  }
+
+  .products-list-container .products-list-content .product-list-link:hover {
+    color: rgb(220, 220, 220);
   }
 
   .products-list-container .products-list-content .product-list-link.active::after {
@@ -929,6 +938,70 @@
   .contactInfo-container .contactInfo-left-section {
     margin-bottom: 14px;
   }
+}
+
+/* #endregion */
+
+/* #region - our Location section */
+
+.ourLocation-container {
+  width: 100%;
+  background: #00000022;
+  margin-bottom: 55px;
+  padding: 22px 0;
+  height: 400px;
+}
+
+.ourLocation-container .content-wrapper {
+  max-width: 800px;
+  width: 100%;
+  height: 100%;
+  padding: 0 22px;
+}
+
+@media screen and (max-width: 800px) { 
+  .ourLocation-container .content-wrapper {
+    flex-direction: column;
+    align-content: space-between;
+  }
+}
+
+.ourLocation-container .map-img-content {
+  background: rgba(0, 128, 0, 0.096);
+  /* width: 400px; */
+}
+
+.ourLocation-container .locationInfo-content {
+  background: rgba(157, 48, 8, 0.144);
+  width: 400px;
+}
+
+.map-img-content .map-img-content {
+  width: 300px;
+  height: 280px;
+  border-radius: 20px;
+  border: 3px solid var(--main-color);
+  overflow: hidden;
+}
+
+.map-img-content .map-img-content img {
+  width: 100%;
+  height: 100%;
+
+  transition: 0.4s all;
+}
+.map-img-content .map-img-content img:hover {
+  transform: scale(1.2);
+}
+
+/* #endregion */
+
+/* #region - footer section */
+
+footer {
+  height: 200px;
+  background: #0000007e;
+  border-top: 3px solid var(--main-color);
 }
 
 /* #endregion */
