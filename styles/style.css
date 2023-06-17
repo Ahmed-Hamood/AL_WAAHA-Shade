@@ -1,4 +1,4 @@
-/* #region - Header > logo > banner */
+/* #region - Header > logo > mb_logo > banner */
 
 .header-container {
   width: 100%;
@@ -40,21 +40,26 @@
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
+.mb-logo-header .content-wrapper {
+  width: 100%;
+  animation: fadeAnimation 0.5s forwards;
+}
+
 .mb-logo-header .mb-logo-img {
-  width: 38px;
-  height: 38px;
-  margin: 0 25px;
+  width: 35px;
+  height: 32px;
 }
 
 .mb-logo-header p {
+  font-size: 1.2rem;
   color: var(--secondary-color);
-  font-size: 1.3rem;
   font-weight: 600;
   text-align: center;
 }
 
+.mb-logo-header p:first-child {
+}
 .mb-logo-header p:last-child {
-  font-size: 1.4rem;
 }
 
 @media screen and (max-width: 550px) {
@@ -478,11 +483,10 @@
 
   display: block;
   opacity: 0;
- 
 }
 
 .aboutUs-container .aboutUs-content.animation p {
-   animation: reveal 0.5s forwards var(--d);
+  animation: reveal 0.5s forwards var(--d);
 }
 
 .aboutUs-container .aboutUs-content p:last-child {
@@ -959,7 +963,7 @@
   padding: 0 22px;
 }
 
-@media screen and (max-width: 800px) { 
+@media screen and (max-width: 800px) {
   .ourLocation-container .content-wrapper {
     flex-direction: column;
     align-content: space-between;
