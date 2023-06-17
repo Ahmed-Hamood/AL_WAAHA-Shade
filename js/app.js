@@ -129,7 +129,7 @@ function Run() {
         this.document.body.classList.remove("header-min");
       }
 
-      if (window.scrollY > 700) { 
+      if (window.scrollY > 600) { 
         if(aboutUs_txt_animation) {
           this.document.querySelector(".aboutUs-content").classList.add("animation")
           aboutUs_txt_animation = false
