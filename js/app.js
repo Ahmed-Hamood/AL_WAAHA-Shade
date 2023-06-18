@@ -18,16 +18,16 @@ function Run() {
   let close_sidebar_btn = document.querySelector(".close-sidebar-btn");
 
   let mb_sidebar_menu_items = document.querySelectorAll(".mb_menu-item");
-  let blank_content_loading = document.querySelector(".blank-content-loading")
+  let blank_content_loading = document.querySelector(".blank-content-loading");
   let aboutUs_txt_animation = true;
 
   slideshow();
   ourProducts();
 
-  setTimeout(()=> {
-    document.body.classList.add("disable-loading")
-    
-  }, 5000)
+  document.body.setAttribute("loading-status", "true");
+  setTimeout(() => {
+    document.body.setAttribute("loading-status", "false");
+  }, 3000);
 
   // active menu item when clicked
   for (let i = 0; i < navbar_items.length; i++) {
@@ -135,14 +135,12 @@ function Run() {
         this.document.body.classList.remove("header-min");
       }
 
-      if (window.scrollY > 600) { 
-        if(aboutUs_txt_animation) {
-          this.document.querySelector(".aboutUs-content").classList.add("animation")
-          aboutUs_txt_animation = false
-
+      if (window.scrollY > 600) {
+        if (aboutUs_txt_animation) {
+          this.document.querySelector(".aboutUs-content").classList.add("animation");
+          aboutUs_txt_animation = false;
         }
       }
-
     },
     { passive: true }
   );
@@ -161,7 +159,6 @@ function Run() {
     mb_menu_btn.classList.remove("hide");
     document.body.removeAttribute("blank-content-sidebar-open");
   });
-
 }
 
 Run();

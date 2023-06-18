@@ -11,14 +11,23 @@
   overflow: hidden;
   transition: 0.5s opacity;
   opacity: 1;
+  user-select: none;
 }
 
-.disable-loading .blank-content-loading {
+body[loading-status="true"] .blank-content-loading {
+  display: flex;
+}
+
+body[loading-status="false"] .blank-content-loading {
   opacity: 0;
 }
 
+.disable-loading .blank-content-loading {
+  display: none;
+}
+
 .blank-content-loading .content-wrapper {
-  animation: fadeAnimation 1s;
+  animation: fadeAnimation 1.5s;
   height: 250px;
   width: 200px;
 }
