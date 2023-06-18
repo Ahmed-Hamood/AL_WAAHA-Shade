@@ -22,6 +22,10 @@ body[loading-status="false"] .blank-content-loading {
   opacity: 0;
 }
 
+body[loading-status="close"] .blank-content-loading {
+  display: none;
+}
+
 .disable-loading .blank-content-loading {
   display: none;
 }

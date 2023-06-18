@@ -27,6 +27,9 @@ function Run() {
   document.body.setAttribute("loading-status", "true");
   setTimeout(() => {
     document.body.setAttribute("loading-status", "false");
+    setTimeout(() => {
+      document.body.setAttribute("loading-status", "close");
+    }, 500);
   }, 3000);
 
   // active menu item when clicked
