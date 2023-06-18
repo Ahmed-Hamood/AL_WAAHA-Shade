@@ -15,7 +15,7 @@
 }
 
 body[loading-status="true"] .blank-content-loading {
-  display: flex;
+  display: flex; 
 }
 
 body[loading-status="false"] .blank-content-loading {
