@@ -18,10 +18,16 @@ function Run() {
   let close_sidebar_btn = document.querySelector(".close-sidebar-btn");
 
   let mb_sidebar_menu_items = document.querySelectorAll(".mb_menu-item");
+  let blank_content_loading = document.querySelector(".blank-content-loading")
   let aboutUs_txt_animation = true;
 
   slideshow();
   ourProducts();
+
+  setTimeout(()=> {
+    document.body.classList.add("disable-loading")
+    
+  }, 5000)
 
   // active menu item when clicked
   for (let i = 0; i < navbar_items.length; i++) {
@@ -51,9 +57,9 @@ function Run() {
       if (getNav == "main") addOffset = 0;
       window.scrollTo(0, document.getElementById(getNav).offsetTop - addOffset);
 
-      document.querySelector(".blank-content").classList.remove("show");
+      document.querySelector(".blank-content-sidebar").classList.remove("show");
       mb_menu_btn.classList.remove("hide");
-      document.body.removeAttribute("blank-content-open");
+      document.body.removeAttribute("blank-content-sidebar-open");
     });
   }
 
@@ -145,15 +151,15 @@ function Run() {
   // -----------------------------
 
   mb_menu_btn.addEventListener("click", () => {
-    document.body.setAttribute("blank-content-open", "");
-    document.querySelector(".blank-content").classList.add("show");
+    document.body.setAttribute("blank-content-sidebar-open", "");
+    document.querySelector(".blank-content-sidebar").classList.add("show");
     mb_menu_btn.classList.add("hide");
   });
 
   close_sidebar_btn.addEventListener("click", () => {
-    document.querySelector(".blank-content").classList.remove("show");
+    document.querySelector(".blank-content-sidebar").classList.remove("show");
     mb_menu_btn.classList.remove("hide");
-    document.body.removeAttribute("blank-content-open");
+    document.body.removeAttribute("blank-content-sidebar-open");
   });
 
 }

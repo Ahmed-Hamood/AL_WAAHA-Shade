@@ -19,6 +19,8 @@ body {
   letter-spacing: normal;
   scroll-behavior: smooth;
   height: 100vh; 
+
+  overflow: hidden;
 }
 
 .main-container {
@@ -31,7 +33,7 @@ body {
   }
 }
 
-body[blank-content-open] {
+body[blank-content-sidebar-open] {
   overflow: hidden;
 }
 
