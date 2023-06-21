@@ -15,7 +15,7 @@
 }
 
 body[loading-status="true"] .blank-content-loading {
-  display: flex; 
+  display: flex;
 }
 
 body[loading-status="false"] .blank-content-loading {
@@ -103,6 +103,10 @@ body[loading-status="close"] .blank-content-loading {
   transition: 400ms opacity;
 }
 
+.header-min .logo-header {
+  display: none;
+}
+
 .log-content {
   width: fit-content;
   background: #34323200;
@@ -122,9 +126,17 @@ body[loading-status="close"] .blank-content-loading {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
+.header-min .mb-logo-header {
+  display: flex;
+}
+
 .mb-logo-header .content-wrapper {
   width: 100%;
   animation: fadeAnimation 1s forwards;
+}
+
+.header-min .mb-logo-header .content-wrapper {
+  width: 450px;
 }
 
 .mb-logo-header .mb-logo-img {
@@ -246,6 +258,10 @@ body[loading-status="close"] .blank-content-loading {
   border: 1px solid #ccac56;
   border-right: none;
   border-left: none;
+}
+
+.header-min .navbar-container {
+  display: none;
 }
 
 @media screen and (max-width: 460px) {

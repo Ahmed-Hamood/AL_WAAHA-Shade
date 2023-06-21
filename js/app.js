@@ -18,7 +18,7 @@ function Run() {
   let close_sidebar_btn = document.querySelector(".close-sidebar-btn");
 
   let mb_sidebar_menu_items = document.querySelectorAll(".mb_menu-item");
-  let blank_content_loading = document.querySelector(".blank-content-loading");
+  // let blank_content_loading = document.querySelector(".blank-content-loading");
   let aboutUs_txt_animation = true;
 
   slideshow();
